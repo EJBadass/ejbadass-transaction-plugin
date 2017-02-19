@@ -37,7 +37,15 @@
   	<dependency>
   		<groupId>com.github.EJBadass</groupId>
   		<artifactId>ejbadass-api</artifactId>
-  		<version>ejbadass-api</version>
   	</dependency>
   </dependencies>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>com.github.EJBadass</groupId>
+  			<artifactId>ejbadass-api</artifactId>
+  			<version>ejbadass-api</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
 </project>

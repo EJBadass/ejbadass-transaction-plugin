@@ -2,6 +2,8 @@ language: java
 sudo: false
 jdk:
 - oraclejdk8
+install:
+- mvn install
 script:
 - mvn clean verify install
 after_success:
@@ -10,7 +12,6 @@ after_success:
 deploy:
   provider: releases
   name: ejbadass-transaction-plugin
-  target_commitish: master
   tag_name: ejbadass-transaction-plugin
   body: "Plugin to add transactions to EJBadass project."
   draft: false

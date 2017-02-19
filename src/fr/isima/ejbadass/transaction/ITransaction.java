@@ -1,6 +1,6 @@
-package fr.isima.ejb.transaction;
+package fr.isima.ejbadass.transaction;
 
-import fr.isima.ejb.injection.IInterceptor;
+import fr.isima.ejbadass.plugable.IInterceptor;
 
 public interface ITransaction {
 	void begin();

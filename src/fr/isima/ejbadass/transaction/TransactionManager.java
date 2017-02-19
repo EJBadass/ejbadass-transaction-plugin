@@ -1,8 +1,8 @@
-package fr.isima.ejb.transaction;
+package fr.isima.ejbadass.transaction;
 
 import java.util.Stack;
 
-import fr.isima.ejb.injection.IInterceptor;
+import fr.isima.ejbadass.plugable.IInterceptor;
 
 public class TransactionManager implements ITransactionManager {
 

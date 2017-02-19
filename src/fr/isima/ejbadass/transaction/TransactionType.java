@@ -1,4 +1,4 @@
-package fr.isima.ejb.transaction;
+package fr.isima.ejbadass.transaction;
 
 public enum TransactionType {
 	REQUIRED, REQUIRES_NEW

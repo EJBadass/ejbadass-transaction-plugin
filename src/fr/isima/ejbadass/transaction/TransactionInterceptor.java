@@ -1,10 +1,10 @@
-package fr.isima.ejb.transaction;
+package fr.isima.ejbadass.transaction;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import fr.isima.ejb.annotation.Inject;
-import fr.isima.ejb.injection.IInterceptor;
+import fr.isima.ejbadass.annotation.Inject;
+import fr.isima.ejbadass.plugable.IInterceptor;
 
 public class TransactionInterceptor implements IInterceptor {
 

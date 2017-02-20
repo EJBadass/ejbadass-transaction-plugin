@@ -2,10 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ejbadass</groupId>
   <artifactId>ejbadass-transaction-plugin</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <description>Plugin to add transactions to EJBadass project.</description>
   <properties>
     <jdk.version>1.8</jdk.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <packaging>jar</packaging>
   <build>
@@ -37,15 +38,7 @@
   	<dependency>
   		<groupId>com.github.EJBadass</groupId>
   		<artifactId>ejbadass-api</artifactId>
+  		<version>1.0.1</version>
   	</dependency>
   </dependencies>
-  <dependencyManagement>
-  	<dependencies>
-  		<dependency>
-  			<groupId>com.github.EJBadass</groupId>
-  			<artifactId>ejbadass-api</artifactId>
-  			<version>ejbadass-api</version>
-  		</dependency>
-  	</dependencies>
-  </dependencyManagement>
 </project>

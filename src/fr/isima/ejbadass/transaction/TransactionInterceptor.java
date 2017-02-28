@@ -1,6 +1,5 @@
 package fr.isima.ejbadass.transaction;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 import fr.isima.ejbadass.annotation.Inject;
@@ -15,9 +14,9 @@ public class TransactionInterceptor implements IInterceptor {
 
 	@Override
 	public Object proceed(Object object, Method method, Object[] args)
-			throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+			throws Exception {
 		Object result = null;
-		boolean isRequired = ((Transactional)method.getDeclaredAnnotationsByType(Transactional.class)[0]).value() == TransactionType.REQUIRED;
+		boolean isRequired = ((Transactional)object.getClass().getMethod(method.getName(), method.getParameterTypes()).getDeclaredAnnotationsByType(Transactional.class)[0]).value() == TransactionType.REQUIRED;
 		ITransaction transaction = transactionManager.getTransaction(this, isRequired);
 		
 		if(transaction.isCaller(this))

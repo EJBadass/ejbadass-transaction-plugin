@@ -10,7 +10,7 @@ after_success:
 deploy:
   provider: releases
   name: ejbadass-transaction-plugin
-  tag_name: 1.0.2
+  tag_name: 1.1.0
   body: "Plugin to add transactions to EJBadass project."
   draft: false
   api_key:
